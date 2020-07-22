@@ -1,0 +1,121 @@
+@charset "UTF-8";
+body {
+  padding: 10px;
+}
+h1 {
+  border-bottom: 2px solid #333333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.top {
+  font-size: 30px;
+}
+
+.attention {
+  color: red;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.img_picture {
+  text-align: center;
+}
+.img_picture img {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th,table td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+table tr:nth-child(odd) {
+  background-color: #eee
+}
+/*-----------------------------------
+入力エリア
+-----------------------------------*/
+label {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-size: 86%;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: 86%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fff;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 200px;
+}
+textarea {
+	width: 100%;
+  max-width: 100%;
+  height: 150px;
+  font-size: 15px;
+}
+input {
+  font-size: 16px;
+}
+
+/*---js（検索機能）---*/
+.search-box_label {
+    font-weight: bold;
+}
+.is-hide {
+    display: none;
+}
+/*---js終了---*/
+
+footer {
+  clear: both;
+}
+
+
+/*　スマホ　*/
+@media screen and (max-width: 480px) {
+   .wrapper {
+     width: auto;
+     margin: 0 2px;
+   }
+ }
+
+/*　PC・タブレット　*/
+@media screen and (min-width: 767px) {
+  .detail_left {
+    width: 49%;
+    float: left;
+  }
+  .detail_right {
+    width: 49%;
+    float: right;
+    padding-bottom: 20px;
+  }
+  .detail_box {
+    clear: both;
+    padding: 30px 0;
+  }
+}
