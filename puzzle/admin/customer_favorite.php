@@ -65,7 +65,7 @@ if ($mode == "delete") {
   </div>
 </form>
 <hr>
-    <table>
+    <table class="favorite">
       <tr>
         <th>商品ID</th>
         <th>商品名</th>

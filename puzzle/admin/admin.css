@@ -45,7 +45,13 @@ table th,table td {
 }
 
 table tr:nth-child(odd) {
-  background-color: #eee
+  background-color: #eee;
+}
+.customer tr:nth-child(odd) {
+  background-color: #c9ddff;
+}
+.favorite tr:nth-child(odd) {
+  background-color: #FEC8FF;
 }
 /*-----------------------------------
 入力エリア

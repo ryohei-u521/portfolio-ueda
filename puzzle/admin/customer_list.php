@@ -28,7 +28,7 @@ try {
 </form>
 <hr>
 
-    <table>
+    <table class="customer">
       <tr>
         <th></th>
         <th>顧客ID</th>

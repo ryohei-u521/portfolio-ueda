@@ -308,8 +308,8 @@ input[type="password"] {
 }
 
 textarea {
-	width: 50%;
-	max-width: 50%;
+	width: 100%;
+	max-width: 100%;
 	height: 70px;
 }
 
@@ -352,16 +352,28 @@ detailエリア
 /*---js終了---*/
 
 .review_box{
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    color: #5d627b;
-    background: white;
-    border-top: solid 5px #5d627b;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  position: relative;
+  margin: 2em auto;
+  padding: 3em 1em .8em;
+  width: 90%; /* ボックス幅 */
+  border-style: solid;
+  border-width: 5px 0 0 0;
+  border-color: #907b6e; /* 枠の色 */
+  background-color: #ede4cd; /* 背景色 */
+  color: #666; /* テキスト色 */
+  box-shadow: 0 0 3px #999; /* 影の色 */
 }
-.review_box p {
-    margin: 0; 
-    padding: 0;
+.handlename {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  background-color: #ede4cd; /* タイトル背景色 */
+  color: #907b6e; /* タイトル色 */
+  font-size: 1.1em;
+  font-weight: bold;
+  border-style: none none double;
+  border-color: #907b6e; /*タイトル下線 */
+  border-width: 3px;
 }
 
 
