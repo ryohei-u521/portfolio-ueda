@@ -47,7 +47,7 @@ try {
         <td><?php echo he($row_post["password"]);?></td>
         <td><?php echo he($row_post["name"]);?></td>
         <td><?php echo he($row_post["address"]);?></td>
-        <!--<td><a href="customer_favorite.php?mode=delete&id=<?php// echo he($row_post["id"]);?>">削除</a></td>-->
+        <td><a href="customer_favorite.php?mode=delete&id=<?php echo he($row_post["id"]);?>">削除</a></td>
       </tr>
 <?php     }?>
     </table>

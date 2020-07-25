@@ -7,13 +7,7 @@ if(empty($_POST['from_hensyu'])){
 <?php require_once "../system/common_admin.php";?>
 
 <?php
-// ホワイトリスト変数の作成
-$whitelist = array("product_name", "product_category", "product_level", "product_picture", "product_comments", "id", "path_filename");
 
-$_POST = whitelist($whitelist);
-?>
-
-<?php 
 mb_internal_encoding("utf8");
 //ファイルが新たにアップロードされたか確認
 if(empty($_FILES['upfile']['tmp_name'])) {

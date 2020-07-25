@@ -33,7 +33,7 @@ if ($mode == "delete") {
     } catch (PDOException $e) {
         // エラー発生時
         $db->rollBack();
-        exit("(お気に入り機能を使用しているユーザーは削除できません)");
+        exit("(customer_favorite)");
     }
     header("Location: customer_list.php");
     exit;
