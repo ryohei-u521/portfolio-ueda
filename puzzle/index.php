@@ -26,6 +26,12 @@
       <label id="nav-open" for="nav-input"><span></span></label>
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
       <div id="nav-content">
+        <form class="sp_form" action="index.php" method="post">キーワード検索
+          <input type="text" name="keyword">
+          <input type="submit" value="検索">
+          <input type="hidden" name="">
+          <input type="submit" value="クリア">
+        </form>
         <form class="myFORM">
           <ul class="search-box" style="padding-bottom:10px;">
             <li style="padding-bottom:5px;"><span class="search-box_label">カテゴリ</span></li>
@@ -47,6 +53,12 @@
   </div>
   <div class="logo-area">
     <div class="logo">LOGO</div>
+    <form class="pc_form" action="index.php" method="post">
+      <input type="text" name="keyword">
+      <input type="submit" value="検索">
+      <input type="hidden" name="">
+      <input type="submit" value="クリア">
+    </form>
     <div class="icon-area">
       <div class="icon">
         <?php
@@ -70,17 +82,9 @@
 <div class="wrapper">
   <div id="h1" class = "left"><h1><?=$page_title?></h1></div>
   
-  <div id="menu" class = "right">
-    <a href="https://toysub.net/" target="_blank">参考サービスへ（トイサブ！）</a>
-  </div>
+  
   
   <div class = "left">
-    <form action="index.php" method="post">キーワード検索<br>
-      <input type="text" name="keyword">
-      <input type="submit" value="検索">
-      <input type="hidden" name="">
-      <input type="submit" value="クリア">
-    </form>
     
 			<div id="parent" class="list"><!-- 画像・テキスト横並べ -->
       <?php
@@ -125,7 +129,7 @@
 			</div>
   </div>
   
-  <div class = "right">
+  <div id="menu" class = "right">
     <h2 class="h2">絞り込み検索</h2>
     <form name="myFORM">
           <ul class="search-box">
@@ -144,6 +148,10 @@
             <li><label class="star"><input type="checkbox" id="pc" name="lv" value="★★★★★">★★★★★</label></li>
           </ul>
     </form>
+  </div>
+  <div id="menu" class = "right">
+    <a>参考サービス</a><br>
+    <a href="https://toysub.net/" target="_blank">トイサブ！</a>
   </div>
 </div>
 <a id="scrollUp" href="#top" style="position: fixed;z-index: 2147483647; display: none;"></a>

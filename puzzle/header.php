@@ -19,7 +19,7 @@
   <div class="header-logo-menu">
 
   <div class="logo-area">
-    <div class="logo"><a href="./">LOGO</a></div>
+    <div class="logo" style="width: 55%;"><a href="./">LOGO</a></div>
     <div class="icon-area">
       <div class="icon">
         <?php
